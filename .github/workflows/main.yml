@@ -38,5 +38,6 @@ jobs:
           echo "activated the virtual environment"
           pip install flask
           echo "downloaded the flask module"
+          set FLASK_APP=microblog.py
           flask run
           echo "run flask"
