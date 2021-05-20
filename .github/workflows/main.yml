@@ -39,6 +39,7 @@ jobs:
           myvenv\Scripts\activate
           echo "activated the virtual environment"
           pip install flask
+          pip install flask_sqlalchemy
           echo "downloaded the flask module"
           set FLASK_APP=microblog.py
           echo %FLASK_APP%
