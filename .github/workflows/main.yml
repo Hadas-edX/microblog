@@ -48,5 +48,4 @@ jobs:
           echo %FLASK_APP%
           # flask run
           # echo "run flask"
-          curl \
-          -H "Accept: application/vnd.github.v3+json" http(s)://{hostname}/api/v3/repos/octocat/hello-world/actions/artifacts
+          ipconfig
