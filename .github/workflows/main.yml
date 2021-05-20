@@ -46,6 +46,6 @@ jobs:
           pip install flask_wtf
           echo "downloaded the flask module"
           echo %FLASK_APP%
-          # flask run
           # echo "run flask"
           ipconfig
+          flask run
