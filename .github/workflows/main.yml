@@ -21,6 +21,7 @@ jobs:
     runs-on: windows-latest 
     env:
       FLASK_APP: microblog.py
+      FLASK_ENV: development
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -42,7 +43,7 @@ jobs:
           pip install flask_sqlalchemy
           pip install flask_migrate
           pip install flask_login
-          pip install flask_wtf
+          pip install Flask-WTF
           echo "downloaded the flask module"
           echo %FLASK_APP%
           flask run
