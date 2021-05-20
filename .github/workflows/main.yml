@@ -18,7 +18,9 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: windows-latest 
+    env:
+      FLASK_APP: microblog.py
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -40,4 +42,5 @@ jobs:
           echo "downloaded the flask module"
           set FLASK_APP=microblog.py
           echo %FLASK_APP%
+          flask run
           # echo "run flask"
