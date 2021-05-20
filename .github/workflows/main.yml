@@ -31,3 +31,4 @@ jobs:
           echo "Add other actions to build,"
           echo "whatttt"
           python3 test.py
+          echo "okay!"
