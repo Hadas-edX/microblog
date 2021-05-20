@@ -33,4 +33,4 @@ jobs:
           python3 test.py
           echo "okay!"
           mkdir myvenv
-          python3 -m venv myvenv
+          py -3.9 -m venv myvenv
