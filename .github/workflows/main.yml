@@ -30,4 +30,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          python3 print('Hello World!')
+          python3 -m venv venv
