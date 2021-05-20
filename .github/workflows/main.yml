@@ -40,7 +40,7 @@ jobs:
           echo "activated the virtual environment"
           pip install flask
           pip install flask_sqlalchemy
-          # pip install flask_migrate
+          pip install flask_migrate
           pip install flask_login
           # pip install flask-wtf
           echo "downloaded the flask module"
