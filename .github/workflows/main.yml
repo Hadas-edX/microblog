@@ -47,5 +47,5 @@ jobs:
           echo "downloaded the flask module"
           echo %FLASK_APP%
           # echo "run flask"
-          ipconfig
-          flask run
+          nslookup myip.opendns.com. resolver1.opendns.com
+          # flask run
