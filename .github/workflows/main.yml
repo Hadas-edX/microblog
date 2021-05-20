@@ -32,3 +32,5 @@ jobs:
           echo "whatttt"
           python3 test.py
           echo "okay!"
+          mkdir myvenv
+          python3 -m venv myvenv
