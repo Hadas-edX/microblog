@@ -41,6 +41,8 @@ jobs:
           pip install flask
           pip install flask_sqlalchemy
           pip install flask_migrate
+          pip install flask_login
+          pip install flask-wtf
           echo "downloaded the flask module"
           set FLASK_APP=microblog.py
           echo %FLASK_APP%
