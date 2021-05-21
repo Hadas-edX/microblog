@@ -10,16 +10,12 @@ from werkzeug.urls import url_parse
 @login_required
 
 def index():
-    posts = [
-        {
-            'author': {'username': 'Ofer'},
-            'subject': 'Python'
-        },
-        {
-            'author': {'username': 'Gili'},
-            'subject': 'DB'
-        }
-    ]
+    posts = []
+    posts_list = Post.query.all
+    for post in posts_list:
+        posts.append({
+            'author': {'username': post.user_id},
+            'subject': post.subject})
     return render_template('index.html', title='Hysterical Caracal', posts=posts)
 
 @app.route('/login', methods=['GET', 'POST'])
