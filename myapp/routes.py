@@ -2,7 +2,7 @@ from flask import render_template, flash, redirect, url_for, request
 from myapp import app
 from myapp.forms import LoginForm, PostForm
 from flask_login import current_user, login_user, logout_user, login_required
-from myapp.models import User
+from myapp.models import User, Post
 from werkzeug.urls import url_parse
 
 @app.route('/')

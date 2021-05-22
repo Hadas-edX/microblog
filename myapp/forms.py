@@ -16,4 +16,3 @@ class PostForm(FlaskForm):
     body = StringField('Body')
     subject = SelectField('Subject', choices=choices)
     submit = SubmitField('Post')
-    
