@@ -2,12 +2,14 @@
 
 {% block content %}
 	<h1>New Post</h1>
-	{{ form.hidden_tag() }}
-	{{ form.title.label }}
-	{{ form.title(style="height:24;") }}<br><br>
-	{{ form.subject.label }}
-	{{ form.subject(style="height:24;") }}<br><br>
-	{{ form.body.label(style="text-align: right;") }}
-	{{ form.body(style="width:240; height:160") }}<br>
-	{{ form.submit() }}
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        {{ form.title.label }}
+        {{ form.title(style="height:24;") }}<br><br>
+        {{ form.subject.label }}
+        {{ form.subject(style="height:24;") }}<br><br>
+        {{ form.body.label(style="text-align: right;") }}
+        {{ form.body(style="width:240; height:160") }}<br>
+        {{ form.submit() }}
+    </form>
 {% endblock %}

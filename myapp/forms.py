@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, BooleanField, SubmitField, SelectField
+from wtforms import StringField, PasswordField, BooleanField, SubmitField, SelectField, TextAreaField
 from wtforms.validators import DataRequired
 
 class LoginForm(FlaskForm):
@@ -13,6 +13,6 @@ class PostForm(FlaskForm):
     choices=['General', 'Python', 'DB', 'Web', 'Storage']
 
     title = StringField('Title', validators=[DataRequired()])
-    body = StringField('Body')
+    body = TextAreaField('Body')
     subject = SelectField('Subject', choices=choices)
     submit = SubmitField('Post')
